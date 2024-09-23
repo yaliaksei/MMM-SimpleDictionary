@@ -1,5 +1,32 @@
-# Module: Hello World
+# MMM-SimpleDictionary
+MagicMirror module to display translation using external API 
 
-The `helloworld` module is one of the default modules of the MagicMirror². It is a simple way to display a static text on the mirror.
+## Installation
 
-For configuration options, please check the [MagicMirror² documentation](https://docs.magicmirror.builders/modules/helloworld.html).
+In the terminal, go to your's MagicMirror intsallation folder and execute the following command:
+
+```
+cd modules
+```
+
+Clone this repository
+
+```
+git clone https://github.com/yaliaksei/MMM-SimplDictionary.git
+```
+
+## Usage and config
+
+Add following module configuration in config.js
+
+```
+...
+        {
+			module: "MMM-SimpleDictionary",
+			position: "top_left", // any poisition of your choice
+			config: {
+				api: <PATH_TO_DICTIONARY_API>, // API that returns translation pair (not part of the module)
+			}
+		},
+...
+```
